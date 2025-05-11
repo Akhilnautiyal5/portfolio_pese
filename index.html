@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Your Portfolio</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+		<style>
+			/* Base Styles */
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: "Poppins", sans-serif;
+			}
+
+			body {
+				background: #f5f5f5;
+			}
+
+			/* Navigation */
+			nav {
+				background: #fff;
+				padding: 1rem 5%;
+				position: fixed;
+				width: 100%;
+				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+				z-index: 1000;
+			}
+
+			nav ul {
+				display: flex;
+				gap: 2rem;
+				list-style: none;
+			}
+
+			nav a {
+				text-decoration: none;
+				color: #333;
+				font-weight: 600;
+			}
+
+			/* Home Section */
+			#home {
+				height: 100vh;
+				background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+					url("./5.jpg") bottom;
+				background-size: cover;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				color: white;
+			}
+
+			.hero-text h1 {
+				font-size: 3.5rem;
+				margin-bottom: 1rem;
+			}
+
+			/* About Me */
+			#about {
+				padding: 4rem 5%;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 2rem;
+				background: #fff;
+			}
+            .bio {
+                margin-top: 50px;
+            }
+
+			.profile-img {
+				width: 100%;
+				border-radius: 15px;
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+			}
+
+			.skills {
+				display: flex;
+				gap: 1rem;
+				flex-wrap: wrap;
+				margin: 2rem 0;
+			}
+
+			.skill-tag {
+				background: #e0e7ff;
+				padding: 0.5rem 1rem;
+				border-radius: 20px;
+				font-size: 0.9rem;
+			}
+
+			/* Projects Grid */
+			#projects {
+				padding: 5rem 5%;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+			}
+
+			.project-card {
+				background: white;
+				padding: 1.5rem;
+				border-radius: 10px;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+			}
+
+			.project-img {
+				width: 100%;
+				height: 200px;
+				object-fit: cover;
+				border-radius: 8px;
+			}
+
+			/* PESE Section */
+            .video-container {
+                position: relative;
+                padding-bottom: 50%;
+                height: 0;
+                margin: 1.5rem 0 0 0;
+            }
+
+			.video-container iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: 10px;
+			}
+
+			/* Interests & Writings */
+			.photo-gallery {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 1rem;
+				margin: 2rem 0;
+			}
+
+			.gallery-img {
+				width: 100%;
+				height: 200px;
+				object-fit: cover;
+				border-radius: 8px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#pese">PESE</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#interests">Interests</a></li>
+			</ul>
+		</nav>
+
+		<!-- Home Section -->
+		<section id="home">
+			<div class="hero-text">
+				<h1>Akhil Nautiyal</h1>
+				<p>Web Developer | Cyber Enthusiast</p>
+			</div>
+		</section>
+
+		<!-- About Me -->
+		<section id="about">
+			<div class="bio">
+				<h2>About Me</h2>
+				<p>
+					A motivated and skilled Computer Science student seeking opportunities
+					to leverage my expertise in fullstack development, machine learning,
+					and software engineering to contribute to innovative technological
+					solutions.
+				</p>
+				<br />
+				<h3>Academic Details</h3>
+				<div style="margin-left: 30px; margin-bottom: 1rem">
+					<ul>
+						<li>
+							<strong>B.TECH CSE</strong>, Graphic Era Hill University, Dehradun
+							(Aug 2022 - Present) - GPA: 7.9/10.0
+						</li>
+						<li>
+							<strong>12th (C.B.S.E)</strong>, Social Baluni Public School
+							(2021) - 84.80%
+						</li>
+						<li>
+							<strong>10th (C.B.S.E)</strong>, Social Baluni Public School
+							(2019) - 91.80%
+						</li>
+					</ul>
+				</div>
+				<br />
+				<h3>Technical Skills</h3>
+				<div style="margin-left: 30px; margin-bottom: 1rem">
+					<ul>
+						<li>
+							<strong>Languages:</strong> C++ (Proficient), C (Proficient),
+							Python, JavaScript (Proficient), Java
+						</li>
+						<li>
+							<strong>Frameworks:</strong> Express.js (Proficient), React.js,
+							Node.js
+						</li>
+						<li><strong>Databases:</strong> MongoDB, MySQL</li>
+						<li><strong>Tools & Technologies:</strong> Git, REST API</li>
+						<li><strong>Development Stack:</strong> MERN Stack</li>
+						<li>
+							<strong>Machine Learning Tools:</strong> TensorFlow, Keras,
+							scikit-learn
+						</li>
+						<li><strong>Operating Systems:</strong> Windows, Linux</li>
+					</ul>
+				</div>
+			</div>
+			<img src="./6.jpg" alt="Profile" class="profile-img" />
+		</section>
+
+		<!-- PESE Section -->
+        <section id="pese" style="padding: 5rem 5%">
+            <h2>PESE (Practical for Employability Skills Enhancement)</h2>
+            <br>
+            <h3>Self Introduction</h3>
+            <div class="video-container">
+            <iframe
+                src="https://drive.google.com/file/d/1vasPxeMUJvKbOqLveZ6o7Dhg_SNve2G7/preview"
+                allow="autoplay"
+                style="width: 80%; height: 80%; object-fit: cover; border: none;"
+            ></iframe>
+            </div>
+
+			<h3>Interview Preparation</h3>
+            <div class="video-container">
+            <iframe
+                src="https://drive.google.com/file/d/1vasPxeMUJvKbOqLveZ6o7Dhg_SNve2G7/preview"
+                allow="autoplay"
+                style="width: 80%; height: 80%; object-fit: cover; border: none;"
+            ></iframe>
+            </div>
+
+			<div class="photo-gallery">
+				<img
+					src="https://source.unsplash.com/random/600x400/?interview"
+					class="gallery-img"
+				/>
+				<img
+					src="https://source.unsplash.com/random/600x400/?classroom"
+					class="gallery-img"
+				/>
+				<img
+					src="https://source.unsplash.com/random/600x400/?presentation"
+					class="gallery-img"
+				/>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<section id="projects">
+            <div class="project-card">
+                <img
+                    src="https://source.unsplash.com/random/600x400/?app"
+                    class="project-img"
+                />
+                <h3>AI Chatbot</h3>
+                <p>Python-based conversational AI using NLP</p>
+                <div class="skills" style="margin: 1rem 0">
+                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                    <span class="skill-tag">TensorFlow</span>
+                </div>
+                <a href="#">GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <img
+                    src="PasswordVault.png"
+                    class="project-img"
+                />
+                <h3>PasswordVault</h3>
+                <p>Self-hosted password manager and generator software</p>
+                <div class="skills" style="margin: 1rem 0">
+                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                    <span class="skill-tag">SQLite</span>
+                    <span class="skill-tag">Tkinter</span>
+                </div>
+                <a href="https://github.com/Akhilnautiyal5/Youtube-video-playlist-Downloader" target="_blank">GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <img
+                    src="yt-video-downloader.png"
+                    class="project-img"
+                />
+                <h3>YouTube Video Scrapper</h3>
+                <p>Self-hosted YouTube video downloader with GUI</p>
+                <div class="skills" style="margin: 1rem 0">
+                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                    <span class="skill-tag">Tkinter</span>
+                </div>
+                <a href="https://github.com/Akhilnautiyal5/Youtube-video-playlist-Downloader" target="_blank">GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <img
+                    src="ransomware.png"
+                    class="project-img"
+                />
+                <h3>Ransomware</h3>
+                <p>Functional ransomware program for research purposes</p>
+                <div class="skills" style="margin: 1rem 0">
+                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                    <span class="skill-tag">PyCrypto</span>
+                    <span class="skill-tag">Tkinter</span>
+                </div>
+                <a href="https://github.com/Akhilnautiyal5/Youtube-video-playlist-Downloader" target="_blank">GitHub →</a>
+            </div>
+
+			<!-- Add more project cards -->
+		</section>
+
+		<!-- Interests & Writings -->
+		<section id="interests" style="padding: 5rem 5%">
+			<h2>My Hobbies</h2>
+			<div class="photo-gallery">
+				<img
+					src="https://source.unsplash.com/random/600x400/?hiking"
+					class="gallery-img"
+				/>
+				<img
+					src="https://source.unsplash.com/random/600x400/?photography"
+					class="gallery-img"
+				/>
+				<img
+					src="https://source.unsplash.com/random/600x400/?coding"
+					class="gallery-img"
+				/>
+			</div>
+		</section>
+	</body>
+</html>

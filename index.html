@@ -12,145 +12,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
 		/>
-		<style>
-			/* Base Styles */
-			* {
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
-				font-family: "Poppins", sans-serif;
-			}
-
-			body {
-				background: #f5f5f5;
-			}
-
-			/* Navigation */
-			nav {
-				background: #fff;
-				padding: 1rem 5%;
-				position: fixed;
-				width: 100%;
-				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-				z-index: 1000;
-			}
-
-			nav ul {
-				display: flex;
-				gap: 2rem;
-				list-style: none;
-			}
-
-			nav a {
-				text-decoration: none;
-				color: #333;
-				font-weight: 600;
-			}
-
-			/* Home Section */
-			#home {
-				height: 100vh;
-				background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-					url("./5.jpg") bottom;
-				background-size: cover;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				text-align: center;
-				color: white;
-			}
-
-			.hero-text h1 {
-				font-size: 3.5rem;
-				margin-bottom: 1rem;
-			}
-
-			/* About Me */
-			#about {
-				padding: 4rem 5%;
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				gap: 2rem;
-				background: #fff;
-			}
-            .bio {
-                margin-top: 50px;
-            }
-
-			.profile-img {
-				width: 100%;
-				border-radius: 15px;
-				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-			}
-
-			.skills {
-				display: flex;
-				gap: 1rem;
-				flex-wrap: wrap;
-				margin: 2rem 0;
-			}
-
-			.skill-tag {
-				background: #e0e7ff;
-				padding: 0.5rem 1rem;
-				border-radius: 20px;
-				font-size: 0.9rem;
-			}
-
-			/* Projects Grid */
-			#projects {
-				padding: 5rem 5%;
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-				gap: 2rem;
-			}
-
-			.project-card {
-				background: white;
-				padding: 1.5rem;
-				border-radius: 10px;
-				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-			}
-
-			.project-img {
-				width: 100%;
-				height: 200px;
-				object-fit: cover;
-				border-radius: 8px;
-			}
-
-			/* PESE Section */
-            .video-container {
-                position: relative;
-                padding-bottom: 50%;
-                height: 0;
-                margin: 1.5rem 0 0 0;
-            }
-
-			.video-container iframe {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				border-radius: 10px;
-			}
-
-			/* Interests & Writings */
-			.photo-gallery {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				gap: 1rem;
-				margin: 2rem 0;
-			}
-
-			.gallery-img {
-				width: 100%;
-				height: 200px;
-				object-fit: cover;
-				border-radius: 8px;
-			}
-		</style>
+		<link rel="stylesheet" href="./style.css"/>
 	</head>
 	<body>
 		<!-- Navigation -->
@@ -158,7 +20,7 @@
 			<ul>
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
-				<li><a href="#pese">PESE</a></li>
+				<li><a href="./pese.html">PESE</a></li>
 				<li><a href="#projects">Projects</a></li>
 				<li><a href="#interests">Interests</a></li>
 			</ul>
@@ -227,123 +89,200 @@
 		</section>
 
 		<!-- PESE Section -->
-        <section id="pese" style="padding: 5rem 5%">
-            <h2>PESE (Practical for Employability Skills Enhancement)</h2>
-            <br>
-            <h3>Self Introduction</h3>
-            <div class="video-container">
-            <iframe
-                src="https://drive.google.com/file/d/1vasPxeMUJvKbOqLveZ6o7Dhg_SNve2G7/preview"
-                allow="autoplay"
-                style="width: 80%; height: 80%; object-fit: cover; border: none;"
-            ></iframe>
-            </div>
-
-			<h3>Interview Preparation</h3>
-            <div class="video-container">
-            <iframe
-                src="https://drive.google.com/file/d/1vasPxeMUJvKbOqLveZ6o7Dhg_SNve2G7/preview"
-                allow="autoplay"
-                style="width: 80%; height: 80%; object-fit: cover; border: none;"
-            ></iframe>
-            </div>
-
-			<div class="photo-gallery">
-				<img
-					src="https://source.unsplash.com/random/600x400/?interview"
-					class="gallery-img"
-				/>
-				<img
-					src="https://source.unsplash.com/random/600x400/?classroom"
-					class="gallery-img"
-				/>
-				<img
-					src="https://source.unsplash.com/random/600x400/?presentation"
-					class="gallery-img"
-				/>
-			</div>
-		</section>
-
+		
 		<!-- Projects -->
-		<section id="projects">
-            <div class="project-card">
-                <img
-                    src="https://source.unsplash.com/random/600x400/?app"
-                    class="project-img"
-                />
-                <h3>AI Chatbot</h3>
-                <p>Python-based conversational AI using NLP</p>
-                <div class="skills" style="margin: 1rem 0">
-                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
-                    <span class="skill-tag">TensorFlow</span>
-                </div>
-                <a href="#">GitHub →</a>
-            </div>
+		<section class="projects">
+			<div style="padding: 5rem 5%; padding-bottom: 0;">
+				<h2>Projects</h2>
+				<p>
+					Here are some of my projects that I have worked on. You can find the
+					source code and more details on my GitHub profile.
+				</p>
+			</div>
+			<div id="projects">
+				<div class="project-card">
+					<img src="PasswordVault.png" class="project-img" />
+					<h3>PasswordVault</h3>
+					<p>Self-hosted password manager and generator software</p>
+					<div class="skills" style="margin: 1rem 0">
+						<span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+						<span class="skill-tag">SQLite</span>
+						<span class="skill-tag">Tkinter</span>
+					</div>
+					<a
+						href="https://github.com/Akhilnautiyal5/Youtube-video-playlist-Downloader"
+						target="_blank"
+						class="btn"
+						>GitHub</a
+					>
+				</div>
+				<div class="project-card">
+					<img
+						src="TricodeCompiler.png"
+						style="object-fit: cover"
+						class="project-img"
+					/>
+					<h3>TriCode Compiler</h3>
+					<p>
+						A full-stack web-based platform for writing, <br />compiling, and
+						executing HTML, CSS, and <br />
+						JavaScript code in real time.
+					</p>
+					<div class="skills" style="margin: 1rem 0">
+						<span class="skill-tag"><i class="fab fa-react"></i> React.js</span>
+						<span class="skill-tag"><i class="fab fa-node"></i> Node.js</span>
+						<span class="skill-tag">MongoDB</span>
+						<span class="skill-tag">Tailwind CSS</span>
+					</div>
+					<a href="#" target="_blank" class="btn">Github</a>
+				</div>
 
-            <div class="project-card">
-                <img
-                    src="PasswordVault.png"
-                    class="project-img"
-                />
-                <h3>PasswordVault</h3>
-                <p>Self-hosted password manager and generator software</p>
-                <div class="skills" style="margin: 1rem 0">
-                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
-                    <span class="skill-tag">SQLite</span>
-                    <span class="skill-tag">Tkinter</span>
-                </div>
-                <a href="https://github.com/Akhilnautiyal5/Youtube-video-playlist-Downloader" target="_blank">GitHub →</a>
-            </div>
-
-            <div class="project-card">
-                <img
-                    src="yt-video-downloader.png"
-                    class="project-img"
-                />
-                <h3>YouTube Video Scrapper</h3>
-                <p>Self-hosted YouTube video downloader with GUI</p>
-                <div class="skills" style="margin: 1rem 0">
-                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
-                    <span class="skill-tag">Tkinter</span>
-                </div>
-                <a href="https://github.com/Akhilnautiyal5/Youtube-video-playlist-Downloader" target="_blank">GitHub →</a>
-            </div>
-
-            <div class="project-card">
-                <img
-                    src="ransomware.png"
-                    class="project-img"
-                />
-                <h3>Ransomware</h3>
-                <p>Functional ransomware program for research purposes</p>
-                <div class="skills" style="margin: 1rem 0">
-                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
-                    <span class="skill-tag">PyCrypto</span>
-                    <span class="skill-tag">Tkinter</span>
-                </div>
-                <a href="https://github.com/Akhilnautiyal5/Youtube-video-playlist-Downloader" target="_blank">GitHub →</a>
-            </div>
-
-			<!-- Add more project cards -->
+				<div class="project-card">
+					<img
+						src="autopip.png"
+						style="object-fit: contain"
+						class="project-img"
+					/>
+					<h3>Auto-Pip</h3>
+					<p>
+						An extension that automatically enables and disables
+						Picture-In-Picture (PiP) mode based on tab activity.
+					</p>
+					<div class="skills" style="margin: 1rem 0">
+						<span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+						<span class="skill-tag">HTML</span>
+						<span class="skill-tag">CSS</span>
+					</div>
+					<a href="#" target="_blank" class="btn">Github</a>
+				</div>
+				<div class="project-card">
+					<img src="ransomware.png" class="project-img" />
+					<h3>Ransomware</h3>
+					<p>Functional ransomware program for research purposes</p>
+					<div class="skills" style="margin: 1rem 0">
+						<span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+						<span class="skill-tag">PyCrypto</span>
+						<span class="skill-tag">Tkinter</span>
+					</div>
+					<a
+						href="https://github.com/Akhilnautiyal5/Youtube-video-playlist-Downloader"
+						target="_blank"
+						class="btn"
+						>Github</a
+					>
+				</div>
+				<div class="project-card">
+					<img
+						style="object-fit: cover"
+						src="myDrive.png"
+						class="project-img"
+					/>
+					<h3>MyDrive</h3>
+					<p>
+						MyDrive is a web-based file storage application that allows users to
+						upload, view, and download files securely across different devices.
+					</p>
+					<div class="skills" style="margin: 1rem 0">
+						<span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+						<span class="skill-tag">HTML</span>
+						<span class="skill-tag">CSS</span>
+						<span class="skill-tag">TailwindCSS</span>
+						<span class="skill-tag"><i class="fab fa-node"></i> Node.js</span>
+						<span class="skill-tag">Express.js</span>
+						<span class="skill-tag">MongoDB</span>
+						<span class="skill-tag">Appwrite</span>
+						<span class="skill-tag">JWT</span>
+						<span class="skill-tag">Multer</span>
+						<span class="skill-tag">EJS</span>
+					</div>
+					<a href="#" target="_blank" class="btn">Github</a>
+				</div>
+				<div class="project-card">
+					<img src="minios.png" class="project-img" />
+					<h3>MiniOS</h3>
+					<p>
+						Builds upon ReactOS by integrating a text editor, a music player, a
+						space shooter game, and an intuitive taskbar for a familiar yet
+						optimized user experience.
+					</p>
+					<div class="skills" style="margin: 1rem 0">
+						<span class="skill-tag">ReactOS</span>
+						<span class="skill-tag">Qt 5.5</span>
+						<span class="skill-tag">SDL_mixer 1.2.13</span>
+						<span class="skill-tag">SFML 2.1</span>
+						<span class="skill-tag"><i class="fab fa-cuttlefish"></i> C++</span>
+						<span class="skill-tag">GCC</span>
+						<span class="skill-tag">CMake</span>
+						<span class="skill-tag">VS Code</span>
+					</div>
+					<a href="#" target="_blank" class="btn">Github</a>
+				</div>
+				<div class="project-card">
+					<img src="compiler.png" class="project-img" />
+					<h3>Compiler</h3>
+					<p>
+						A custom-built compiler designed to parse, analyze, and execute code
+						efficiently, supporting multiple programming paradigms and optimized
+						for performance.
+					</p>
+					<div class="skills" style="margin: 1rem 0">
+						<span class="skill-tag"><i class="fab fa-cuttlefish"></i> C++</span>
+						<span class="skill-tag">Lex</span>
+						<span class="skill-tag">Yacc</span>
+						<span class="skill-tag">LLVM</span>
+					</div>
+					<a href="#" target="_blank" class="btn">Github</a>
+				</div>
+				<div class="project-card">
+					<img src="yt-video-downloader.png" class="project-img" />
+					<h3>YouTube Video Scrapper</h3>
+					<p>Self-hosted YouTube video downloader with GUI</p>
+					<div class="skills" style="margin: 1rem 0">
+						<span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+						<span class="skill-tag">Tkinter</span>
+					</div>
+					<a
+						href="https://github.com/Akhilnautiyal5/Youtube-video-playlist-Downloader"
+						target="_blank"
+						class="btn"
+						>Github</a
+					>
+				</div>
+			</div>
 		</section>
 
 		<!-- Interests & Writings -->
 		<section id="interests" style="padding: 5rem 5%">
 			<h2>My Hobbies</h2>
 			<div class="photo-gallery">
-				<img
-					src="https://source.unsplash.com/random/600x400/?hiking"
-					class="gallery-img"
-				/>
-				<img
-					src="https://source.unsplash.com/random/600x400/?photography"
-					class="gallery-img"
-				/>
-				<img
-					src="https://source.unsplash.com/random/600x400/?coding"
-					class="gallery-img"
-				/>
+				<img src="1.jpg" class="gallery-img" />
+				<img src="2.jpg" class="gallery-img" />
+				<img src="3.jpg" class="gallery-img" />
 			</div>
 		</section>
 	</body>
+	<script>
+		// Disable specific keyboard shortcuts
+		document.addEventListener("keydown", function (e) {
+			if (
+				e.ctrlKey &&
+				(e.key === "s" || e.key === "S" || e.key === "p" || e.key === "P")
+			) {
+				e.preventDefault();
+			}
+			if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+				e.preventDefault();
+			}
+		});
+
+		// Disable drag and drop for the entire document
+		document.addEventListener("dragstart", function (e) {
+			e.preventDefault();
+		});
+
+		// Disable right-click for the entire document
+		document.addEventListener("contextmenu", function (e) {
+			e.preventDefault();
+		});
+	</script>
 </html>
